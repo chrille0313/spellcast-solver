@@ -1,0 +1,6 @@
+# Best play: REDEYE (66) - hits both DW tiles plus the TL.
+D     E/TL  Y/DW  E     E/DL
+E     I/DL  C     A/DL  E
+T     R/DW  K     A/TL  A/DL
+A     E     G     E     B
+B     S     E     W     J

@@ -1,0 +1,7 @@
+# A second sample board. Letter values are derived from the canonical table,
+# so the top play here is whatever the solver reports.
+O     I     A     K/DW  E
+S/DL  B     F     G     D
+A     C     C/DL  A/TL  D/DL
+Q     R     H     F     E
+N/DL  I     R     I/DW  G/TL
