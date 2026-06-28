@@ -1,0 +1,18 @@
+# The downloaded word list is large and has its own licensing; fetch it locally.
+/data/words.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+
+# Tooling
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
