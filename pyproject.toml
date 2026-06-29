@@ -1,20 +1,34 @@
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling>=1.27"]
 build-backend = "hatchling.build"
 
 [project]
 name = "spellcast-solver"
-version = "0.1.0"
+dynamic = ["version"]
 description = "A trie-guided solver for the Discord SpellCast word game."
 readme = "README.md"
 requires-python = ">=3.10"
-license = { file = "LICENSE" }
+license = "MIT"
+license-files = ["LICENSE"]
 authors = [{ name = "Christian Mattsson" }]
-keywords = ["spellcast", "discord", "word-game", "solver", "trie"]
+keywords = ["spellcast", "discord", "word-game", "solver", "trie", "puzzle"]
 classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Games/Entertainment :: Puzzle Games",
+    "Typing :: Typed",
 ]
+
+[project.urls]
+Homepage = "https://github.com/chrille0313/spellcast-solver"
+Repository = "https://github.com/chrille0313/spellcast-solver"
+Issues = "https://github.com/chrille0313/spellcast-solver/issues"
 
 [project.scripts]
 spellcast-solve = "spellcast_solver.cli:main"
@@ -22,8 +36,14 @@ spellcast-solve = "spellcast_solver.cli:main"
 [project.optional-dependencies]
 dev = ["pytest>=8"]
 
+[tool.hatch.version]
+path = "src/spellcast_solver/__init__.py"
+
 [tool.hatch.build.targets.wheel]
 packages = ["src/spellcast_solver"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src", "tests", "examples", "README.md", "LICENSE"]
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
