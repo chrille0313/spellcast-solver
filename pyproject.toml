@@ -10,10 +10,10 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
 license-files = ["LICENSE"]
-authors = [{ name = "Christian Mattsson" }]
+authors = [{ name = "chrille0313" }]
 keywords = ["spellcast", "discord", "word-game", "solver", "trie", "puzzle"]
 classifiers = [
-    "Development Status :: 4 - Beta",
+    "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
