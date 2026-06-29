@@ -1,6 +1,3 @@
-# The downloaded word list is large and has its own licensing; fetch it locally.
-/data/words.txt
-
 # Python
 __pycache__/
 *.py[cod]
