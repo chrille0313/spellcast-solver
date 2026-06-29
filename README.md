@@ -1,5 +1,10 @@
 # spellcast-solver
 
+[![PyPI](https://img.shields.io/pypi/v/spellcast-solver)](https://pypi.org/project/spellcast-solver/)
+[![Python versions](https://img.shields.io/pypi/pyversions/spellcast-solver)](https://pypi.org/project/spellcast-solver/)
+[![CI](https://github.com/chrille0313/spellcast-solver/actions/workflows/ci.yml/badge.svg)](https://github.com/chrille0313/spellcast-solver/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/pypi/l/spellcast-solver)](LICENSE)
+
 A solver for the Discord SpellCast word game. Give it a board and it finds the
 highest-scoring words you can spell by linking adjacent tiles.
 
