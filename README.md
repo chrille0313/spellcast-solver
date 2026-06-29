@@ -27,14 +27,13 @@ for each one.
 ## Install
 
 ```bash
-pip install -e .
-python scripts/fetch_words.py   # downloads data/words.txt
+pip install spellcast-solver
 ```
 
-The word list is not committed (it is large and has its own licensing). SpellCast
-does not publish its exact dictionary, so the fetch script pulls a standard
-Scrabble-style list, which is a close match. Point `--words` at any other
-newline-delimited list if you have a better one.
+The package bundles the public-domain ENABLE word list (~173k words), so it
+works with no setup. SpellCast does not publish its exact dictionary, but ENABLE
+is a close match. To use a different list, pass `--words PATH` on the CLI or
+`load_trie(path)` in code.
 
 ## Usage
 
@@ -98,4 +97,5 @@ pytest
 
 ## License
 
-MIT
+MIT, except the bundled word list (`src/spellcast_solver/data/enable.txt`),
+which is the ENABLE word list and is in the public domain.
